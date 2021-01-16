@@ -1,0 +1,27 @@
+package Day5_operators;
+import java.util.Scanner;
+
+public class CodingBook1 {
+
+public static void main(String[] args) {
+	
+	Scanner scan= new Scanner(System.in);
+	
+
+	System.out.print("Please enter your age: ");
+	int age = scan.nextInt();
+		
+	while(age != -1)	{	
+	if(age< 13){
+		System.out.println("This movie contains violence and not appropriate for you.");						
+	}else if((age>=13) || (age<18)) {
+		System.out.println("This movie contains nudity and not appropriate for you.");
+	}else {
+		System.out.println("This movie is appropriate for you.");
+	}
+	 System.out.print("Please enter your age: ");
+	 age = scan.nextInt();
+	}
+
+}
+}
